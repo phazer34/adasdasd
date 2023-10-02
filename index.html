@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="bigHTML">
+<head>
+    <title>Background</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="newScript.js"></script>
+</head>
+<body>
+    <h1>BACKGROUND EDITOR</h1>
+    <div class="imageInputItems" id="divStuff">
+        <label for="image-input" class="item">Pick The Photo You Would Like To Edit: </h1>
+        <input type="file" id="image-input" accept="image/*" class="item">
+    </div>
+    <div class="colorPickerReplaceItems" id="divStuff">
+        <label for="color-picker-replace" class="item">What Color Would You Like To Replace: </label>
+        <input type="color" id="color-picker-replace" class="item">
+    </div>
+    <div class="colorPickerNewItems" id="divStuff">
+        <label for="color-picker-new" class="item">What Color Would You Like To Replace It With: </label>
+        <input type="color" id="color-picker-new" class="item">
+    </div>
+    <div class="alphaSliderItems" id="divStuff">
+        <label for="alpha-slider" class="item">Alpha Value: </label>
+        <input type="range" id="alpha-slider" min="0" max="255" value="255" class="item">
+        <span id="alpha-label" class="item">Alpha: 255%</span> 
+    </div>
+    <div class="edgeEnhancementItems" id="divStuff">
+        <label for="intensity-slider" class="item">Edge Enhancement Intensity: </label>
+        <input type="range" id="intensity-slider" min="0" max="255" value="0" class="item">
+        <span id="intensity-label" class="item">Intensity: 0%</span> 
+    </div>       
+    <button>Start</button>
+    <img id="image-preview" src="#" alt="">
+    <button id="download-button">Download</button>
+</body>
+</html>

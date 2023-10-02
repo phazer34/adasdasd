@@ -1,0 +1,101 @@
+body{
+    background-color: black;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.bigHTML{
+    font-family: Arial;
+    background-color: black;
+    color: var(--primary-color);
+    --primary-color: white;
+    border-radius: 10px;
+    align-content: center;
+    font-size: 30px;
+    --background-color: #fff; /* Default white background */
+}
+
+
+
+#image-preview{
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.elements{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    border: 2px dotted white;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+div:hover{
+    border: 3px dotted rgb(255, 0, 0);
+    background-color: rgba(255, 255, 255, .5);
+    width: 900px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#divStuff{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggle-label {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background: #888;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-input:checked + .toggle-label {
+    background-color: var(--gradient-end); /* Background color when switched on */
+  }
+  
+  .toggle-input:checked + .toggle-label::before {
+    transform: translateX(20px); /* Position when switched on */
+  }
